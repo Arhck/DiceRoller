@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiceRoller</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img class="dice-image" src="dice-image.png" sizes="" srcset="">
+        <h1>DiceRoller 1.0</h1>
+    </header>
+    <section class="corpo">
+        <div class="alert" id="resultado" style="display: none;">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+            <p id="resTexto">Teste</p>
+        </div>
+        <div id="savingPrompt" class="alert" style="display: none;">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+            <p>Por favor, nomeie esta rolagem de dados para salvar:</p>
+            <input type="text" id="save-name">
+            <button id="cancelSave" onclick="this.parentElement.style.display='none';">Cancelar</button>
+            <button id="submitSave">Salvar</button>
+        </div>
+        <div id="roll">
+            <label for="xD">Número de Rolagens: </label>
+            <input type="number" value="1" id="xD" style="width: 3em;" max="999" min="1" />
+            <br> <br>
+            <label for="dX">Lados do Dado: </label>
+            <select name="dados" id="dX">
+                <option value="4">d4</option>
+                <option value="6" selected>d6</option>
+                <option value="8">d8</option>
+                <option value="10">d10</option>
+                <option value="12">d12</option>
+                <option value="20">d20</option>
+                <option value="100">d100</option>
+            </select>
+            <br> <br>
+            <label for="mod">Modificador: </label>
+            <input type="number" value="0" style="width: 5em;" id="mod"/>
+            <br><br>
+            <input type="button" value="Rolar" class="btn-rolar" id="roller">
+            <input type="button" value="Salvar" class="btn-salvar" id="save">
+
+        </div>
+        <br><br>
+        <div id="saved-rolls">
+
+        </div>
+    </section>
+    <footer class="rodape"></footer>
+    <script type="module" src="logic.js"></script>
+</body>
+
+</html>
