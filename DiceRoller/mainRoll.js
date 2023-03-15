@@ -1,16 +1,14 @@
-class Rolagem {
-  constructor(nRolagens, lados, mod, id, roll) {
-    this.nRolagens = nRolagens;
-    this.lados = lados;
-    this.mod = mod;
-    this.id = id;
-    this.rollBtn = roll;
-    this.rollBtn.addEventListener("click", this.rolar.bind(this))
-  }
-  rolar() {
-    let quantidade = this.nRolagens
-    let lados = this.lados
-    let mod = Number(this.mod)
+const xD = document.getElementById("xD");
+const dX = document.getElementById("dX");
+const modif = document.getElementById("mod");
+
+const mainRoll = () => {
+  let quantidade = xD.value;
+  let lados = dX.value;
+  let mod = Number(modif.value);
+  if (quantidade.length == 0) {
+    alert("Você quer rolar zero dados?");
+  } else {
     let min = 1;
     let rolagensIndividuais = [];
     let total = 0;
@@ -26,5 +24,5 @@ class Rolagem {
     res.style.display = "";
     resTexto.innerHTML = `Resultado dos dados: ${resultado[0]}<br>Soma dos dados: ${resultado[1]}<br>Resultado final: ${resultado[2]}`;
   }
-}
-export default Rolagem;
+};
+export default mainRoll;

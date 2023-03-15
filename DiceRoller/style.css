@@ -1,5 +1,15 @@
 body {
   background: black;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 1500;
+}
+button{
+  color: aliceblue;
+  background-color: #434644;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  border-radius: 25%;
+  margin-left: 5px;
 }
 section {
   background: white;
@@ -12,7 +22,6 @@ section {
   margin-top: 15px;
 }
 h1 {
-  font-family: "Courier New", Courier, monospace;
   position: absolute;
   align-self: center;
   margin-left: 60px;
@@ -41,7 +50,7 @@ div #roll {
 /* The alert message box */
 .alert {
   padding: 20px;
-  background-color: #11c462;
+  background-color: #149b51;
   color: white;
   margin-bottom: 15px;
   border-radius: 10px;
@@ -61,18 +70,20 @@ div #roll {
 .closebtn:hover {
   color: black;
 }
-p{
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: bold;
-}
 .container{
   color: white;
   background: rgba(54, 17, 221, 0.623);
   border-radius: 10px;
   padding: 15px;
-  width: 400px;
+  width: 470px;
   height: auto;
   margin: auto;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623);
   margin-top: 15px;
+}
+input#save-name{
+  margin-left: 28%;
+}
+button#cancelSave{
+  margin-left: 25%;
+  margin-right: 9%;
 }
