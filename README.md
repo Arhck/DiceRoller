@@ -2,7 +2,9 @@
 
 O Projeto "DiceRoller" surgiu da necessidade de jogadores de RPG de mesa que usam sistemas complexos e que exigem constantes cálculos que atrasam o desenvolver da campanha. Este é também meu primeiro projeto a ser finalizado e publicado na web.
   
-# LICENÇA
+## Licença
+
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/Arhck/DiceRoller/blob/main/LICENSE)
 
 # Funcionalidades
 
@@ -42,9 +44,14 @@ Para usar o DiceRoller, basta seguir o passo a passo a seguir:
 6. Agora que aprendeu a rolar os dados, salvar as rolagens e apagar as que não usará mais, você está pronto para usar o "DiceRoller" para impulsionar suas partidas de RPG.
 
 # Tecnologias
-## Front-end
+### Front-end
 HTML, CSS, JavaScript
 
-## Implementação
+### Implementação
 000webhost da Hostinger
 
+# Sobre o Autor
+
+João Victor Machado Motta
+
+[![Linkedin](https://user-images.githubusercontent.com/98413991/225648618-b8d8c70d-28d4-43d3-b30d-8e27abaa1a97.png)](https://www.linkedin.com/in/jo%C3%A3o-victor-machado-motta-1aa292229/)
