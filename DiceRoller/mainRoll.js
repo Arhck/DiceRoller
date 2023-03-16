@@ -6,8 +6,12 @@ const mainRoll = () => {
   let quantidade = xD.value;
   let lados = dX.value;
   let mod = Number(modif.value);
-  if (quantidade.length == 0) {
-    alert("Você quer rolar zero dados?");
+  if (quantidade.length == 0 || quantidade == 0) {
+    alert("Você quer rolar zero dados? O resultado é zero.");
+  } else if (quantidade < 0) {
+    alert(
+      "Você quer rolar uma quantidade negativa de dados? Imagino se isso é mesmo possível..."
+    );
   } else {
     let min = 1;
     let rolagensIndividuais = [];
